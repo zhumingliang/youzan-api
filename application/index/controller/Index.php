@@ -28,13 +28,13 @@ class Index
     {
         try {
             echo 1;
-          /*  $token = new Token();
+            $token = new Token();
             $data = array(
                 'content' => $request->param('code'),
                 'create_time' => date("Y-m-d H:i:s"),
             );
             Db::table('t_test')->insert($data);
-            $token->getToken($request->param('code'));*/
+            $token->getToken($request->param('code'));
         } catch (Exception $e) {
             echo $e->getMessage();
         }
