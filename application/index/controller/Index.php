@@ -3,6 +3,7 @@
 namespace app\index\controller;
 
 use think\Db;
+use think\Exception;
 use think\Request;
 use youzan\Token;
 use youzan\YouZanConfig;
@@ -11,8 +12,12 @@ class Index
 {
     public function index()
     {
-        $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state=teststate&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
-        $res = json_decode($this->httpGet($url));
+        try {
+            $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state=teststate&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
+            $res = json_decode($this->httpGet($url));
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
 
 
     }
@@ -20,13 +25,18 @@ class Index
 
     public function callback(Request $request)
     {
-        $token = new Token();
-        $data = array(
-            'content' => $request->param('code'),
-            'create_time' => date("Y-m-d H:i:s"),
-        );
-        Db::table('t_test')->insert($data);
-        $token->getToken($request->param('code'));
+        try {
+            $token = new Token();
+            $data = array(
+                'content' => $request->param('code'),
+                'create_time' => date("Y-m-d H:i:s"),
+            );
+            Db::table('t_test')->insert($data);
+            $token->getToken($request->param('code'));
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+
     }
 
     private function httpGet($url)
