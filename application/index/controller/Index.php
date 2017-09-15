@@ -13,7 +13,7 @@ class Index
     public function index()
     {
         try {
-            $url = "https://open.youzan.com/oauth/authorize?client_id=83010f53b9a9c0ed35&response_type=code&state=teststate&redirect_uri=http://youzan.partywall.cn:8080/Index/callback";
+            $url = "https://open.youzan.com/oauth/authorize?client_id=83010f53b9a9c0ed35&response_type=code&state=teststate&redirect_uri=http://youzan.partywall.cn:8080/index.php/Index/index/callback";
             echo $url;
             $res = json_decode($this->httpGet($url));
         } catch (Exception $e) {
@@ -27,13 +27,14 @@ class Index
     public function callback(Request $request)
     {
         try {
-            $token = new Token();
+            echo 1;
+          /*  $token = new Token();
             $data = array(
                 'content' => $request->param('code'),
                 'create_time' => date("Y-m-d H:i:s"),
             );
             Db::table('t_test')->insert($data);
-            $token->getToken($request->param('code'));
+            $token->getToken($request->param('code'));*/
         } catch (Exception $e) {
             echo $e->getMessage();
         }
