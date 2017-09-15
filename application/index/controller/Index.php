@@ -13,7 +13,7 @@ class Index
     public function index()
     {
         try {
-            $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state=teststate&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
+            $url = "https://open.youzan.com/oauth/authorize?client_id=83010f53b9a9c0ed35&response_type=code&state=teststate&redirect_uri=http://youzan.partywall.cn:8080/Index/callback";
             echo $url;
             $res = json_decode($this->httpGet($url));
         } catch (Exception $e) {
