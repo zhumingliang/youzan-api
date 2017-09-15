@@ -14,6 +14,7 @@ class Index
     {
         try {
             $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state=teststate&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
+            echo $url;
             $res = json_decode($this->httpGet($url));
         } catch (Exception $e) {
             echo $e->getMessage();
