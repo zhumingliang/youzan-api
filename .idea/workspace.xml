@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/Index.php" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php" afterPath="$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +15,7 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
@@ -25,6 +25,36 @@
                 <element signature="e#229#458#0#PHP" expanded="false" />
                 <element signature="e#465#1151#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YZSignClient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZSignClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-439">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YZTokenClient.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZTokenClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-418">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YZHttpClient.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,6 +122,7 @@
         <option value="$PROJECT_DIR$/application/api/controller/UpFile.php" />
         <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
+        <option value="$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php" />
       </list>
     </option>
   </component>
@@ -163,6 +194,13 @@
             <path>
               <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="youzan-api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="YouZan" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="lib" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youzan-api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -218,7 +256,7 @@
       <workItem from="1505488200924" duration="913000" />
       <workItem from="1505633419012" duration="2418000" />
       <workItem from="1505636612016" duration="4738000" />
-      <workItem from="1505652421554" duration="5656000" />
+      <workItem from="1505652421554" duration="5864000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1505465791049</created>
@@ -437,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505658507784</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="测试">
+      <created>1505658688273</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1505658688273</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20672000" />
+    <option name="totallyTimeSpent" value="20880000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -530,8 +575,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/a.html" />
-    <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZTokenClient.php" />
-    <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZSignClient.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -659,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extend/YouZan/Token.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -766,6 +801,30 @@
             <element signature="e#229#458#0#PHP" expanded="false" />
             <element signature="e#465#1151#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZSignClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-439">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZTokenClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
