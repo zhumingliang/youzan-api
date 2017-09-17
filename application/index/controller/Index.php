@@ -2,12 +2,16 @@
 
 namespace app\index\controller;
 
-use youzanlib\Toekn;
+//use youzanlib\Toekn;
+
+use think\Loader;
 
 class Index
 {
     public function index()
     {
-        $token = new Toekn();
+        Loader::import('youzanlib.Token');
+        $token = new \youzanlib\Toekn();
+
     }
 }
