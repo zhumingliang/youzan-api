@@ -1,5 +1,7 @@
 <?php
 
+namespace YouZan\lib;
+
 class YZHttpClient{
     private static $boundary = '';
 
@@ -20,24 +22,19 @@ class YZHttpClient{
         }
         return self::http($url, 'POST', $body, $headers);
     }
-    /**
-     * Make an HTTP request
-     *
-     * @return string API results
-     * @ignore
-     */
+
     private static function http($url, $method, $postfields = NULL, $headers = array())
     {
         $ci = curl_init();
         /* Curl settings */
         curl_setopt($ci, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
-        curl_setopt($ci, CURLOPT_USERAGENT, 'KdtApiSdk Client v0.1');
+        curl_setopt($ci, CURLOPT_USERAGENT, 'X-YZ-Client 2.0.0 - PHP');
         curl_setopt($ci, CURLOPT_CONNECTTIMEOUT, 30);
         curl_setopt($ci, CURLOPT_TIMEOUT, 30);
         curl_setopt($ci, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ci, CURLOPT_ENCODING, "");
         curl_setopt($ci, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ci, CURLOPT_SSL_VERIFYHOST, 2);
+        curl_setopt($ci, CURLOPT_SSL_VERIFYHOST, 1);
         curl_setopt($ci, CURLOPT_HEADER, FALSE);
 
         switch ($method) {
@@ -77,7 +74,6 @@ class YZHttpClient{
             $multipartbody .= 'content-disposition: form-data; name="' . $key . "\"\r\n\r\n";
             $multipartbody .= $value . "\r\n";
         }
-
         foreach ($files as $key => $value) {
             if (!$value) {
                 continue;
