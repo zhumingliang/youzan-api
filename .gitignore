@@ -1,5 +1,1 @@
-.idea
-composer.lock
-*.log
-public/access_token.php
-public/qrcode/
+
