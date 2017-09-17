@@ -6,7 +6,8 @@ use think\Db;
 use think\Exception;
 use think\Loader;
 use think\Request;
-use youzan\YouZanConfig;
+use YouZan\Token;
+use YouZan\YouZanConfig;
 
 class Index
 {
@@ -14,8 +15,7 @@ class Index
     {
         try {
 
-            Loader::import('youzan.Token');
-            $foo = new \Token();
+            $token = new Token();
             $url = "https://open.youzan.com/oauth/authorize?client_id=83010f53b9a9c0ed35&response_type=code&state=teststate&redirect_uri=http://youzan.partywall.cn:8080/index.php/Index/index/callback";
             echo $url;
         } catch (Exception $e) {
