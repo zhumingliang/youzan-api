@@ -4,12 +4,14 @@ namespace app\index\controller;
 
 //use youzanlib\Toekn;
 
-use YouZan\Toekn;
+use think\Loader;
+use YouZan\Token;
 
 class Index
 {
     public function index()
     {
-       $token=new Toekn();
+        Loader::import('YouZan\Token', EXTEND_PATH);
+       $token=new Token();
     }
 }
