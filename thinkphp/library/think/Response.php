@@ -89,9 +89,6 @@ class Response
      */
     public function send()
     {
-        // 监听response_send
-        Hook::listen('response_send', $this);
-
         // 处理输出数据
         $data = $this->getContent();
 

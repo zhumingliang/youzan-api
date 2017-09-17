@@ -272,12 +272,7 @@ class Url
                 $domain .= '.' . $rootDomain;
             }
         }
-        if (false !== strpos($domain, ':')) {
-            $scheme = '';
-        } else {
-            $scheme = $request->isSsl() || Config::get('is_https') ? 'https://' : 'http://';
-        }
-        return $scheme . $domain;
+        return ($request->isSsl() || Config::get('is_https') ? 'https://' : 'http://') . $domain;
     }
 
     // 解析URL后缀
