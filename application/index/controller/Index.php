@@ -4,8 +4,7 @@ namespace app\index\controller;
 
 //use youzanlib\Toekn;
 
-use think\Loader;
-use youzanlib\Toekn;
+use YouZan\Toekn;
 
 class Index
 {
