@@ -4,7 +4,6 @@ namespace app\index\controller;
 
 use think\Db;
 use think\Exception;
-use think\Loader;
 use think\Request;
 use YouZan\lib\YZGetTokenClient;
 use YouZan\Token;
