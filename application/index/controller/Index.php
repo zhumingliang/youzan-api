@@ -13,7 +13,7 @@ class Index
 {
     public function index()
     {
-        Loader::import('YouZan.Test', EXTEND_PATH);
+        Loader::import('YouZan/Test', EXTEND_PATH);
        $token=new \Test();
     }
 }
