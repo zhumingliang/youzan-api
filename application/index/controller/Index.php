@@ -5,7 +5,6 @@ namespace app\index\controller;
 use think\Db;
 use think\Exception;
 use think\Request;
-use youzan\Token;
 use youzan\YouZanConfig;
 
 class Index
@@ -13,7 +12,7 @@ class Index
     public function index()
     {
         try {
-            $token = new Token();
+            $token = new \youzan\Token();
             $url = "https://open.youzan.com/oauth/authorize?client_id=83010f53b9a9c0ed35&response_type=code&state=teststate&redirect_uri=http://youzan.partywall.cn:8080/index.php/Index/index/callback";
             echo $url;
         } catch (Exception $e) {
