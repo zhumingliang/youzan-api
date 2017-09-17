@@ -20,11 +20,6 @@ return [
     'app_debug'              => true,
     // 应用Trace
     'app_trace'              => false,
-    // 设置Trace显示方式
-    'trace'     =>  [
-        // 在当前Html页面显示Trace信息
-        'type'  =>  'html',
-    ],
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -65,7 +60,7 @@ return [
     // 禁止访问模块
     'deny_module_list'       => ['common'],
     // 默认控制器名
-    'default_controller'     => 'Index',
+    'default_controller'     => 'Admin',
     // 默认操作名
     'default_action'         => 'index',
     // 默认验证器
@@ -106,7 +101,7 @@ return [
     // 域名根，如thinkphp.cn
     'url_domain_root'        => '',
     // 是否自动转换URL中的控制器和操作名
-    'url_convert'            => true,
+    'url_convert'            => false,
     // 默认的访问控制器层
     'url_controller_layer'   => 'controller',
     // 表单请求类型伪装变量
@@ -119,6 +114,8 @@ return [
     'request_cache'          => false,
     // 请求缓存有效期
     'request_cache_expire'   => null,
+    // 全局请求缓存排除规则
+    'request_cache_except'   => [],
 
     // +----------------------------------------------------------------------
     // | 模板设置
@@ -144,10 +141,7 @@ return [
     ],
 
     // 视图输出字符串内容替换
-    // 视图输出字符串内容替换
-    'view_replace_str'       => [
-        '__API__'=>'http://127.0.0.1/youzan/public/static/api'
-    ],
+    'view_replace_str'       => [],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
     'dispatch_error_tmpl'    => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',

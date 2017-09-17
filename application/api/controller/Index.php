@@ -2,6 +2,7 @@
 
 namespace app\index\controller;
 
+use think\Controller;
 use think\Db;
 use think\Exception;
 use think\Request;
@@ -10,7 +11,7 @@ use YouZan\Token;
 use YouZan\YouZanConfig;
 
 
-class Index
+class Index extends Controller
 {
     public function index()
     {
