@@ -3,7 +3,6 @@
 namespace app\api\controller;
 
 use think\Controller;
-use think\Db;
 use think\Exception;
 use think\Request;
 use YouZan\lib\YZGetTokenClient;
