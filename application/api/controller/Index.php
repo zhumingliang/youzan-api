@@ -1,6 +1,6 @@
 <?php
 
-namespace api\index\controller;
+namespace app\api\controller;
 
 use think\Controller;
 use think\Db;
