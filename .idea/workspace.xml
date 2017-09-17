@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/database.php" afterPath="$PROJECT_DIR$/application/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/Index.php" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +15,11 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="621">
+              <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
               <folding>
                 <element signature="e#38#59#0#PHP" expanded="true" />
                 <element signature="e#229#458#0#PHP" expanded="false" />
@@ -28,12 +28,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="72">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding>
+                <element signature="e#602#1548#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,9 +79,9 @@
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/application/api/controller/UpFile.php" />
         <option value="$PROJECT_DIR$/application/config.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
         <option value="$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php" />
         <option value="$PROJECT_DIR$/application/database.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
       </list>
     </option>
   </component>
@@ -213,7 +215,7 @@
       <workItem from="1505488200924" duration="913000" />
       <workItem from="1505633419012" duration="2418000" />
       <workItem from="1505636612016" duration="4738000" />
-      <workItem from="1505652421554" duration="6061000" />
+      <workItem from="1505652421554" duration="6151000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1505465791049</created>
@@ -446,11 +448,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505658937520</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="测试">
+      <created>1505659135413</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1505659135413</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21077000" />
+    <option name="totallyTimeSpent" value="21167000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -772,22 +781,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+    <entry file="file://$PROJECT_DIR$/application/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <element signature="e#38#59#0#PHP" expanded="true" />
-            <element signature="e#229#458#0#PHP" expanded="false" />
+            <element signature="e#602#1548#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/database.php">
+    <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="621">
+          <caret line="43" column="21" lean-forward="false" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+          <folding>
+            <element signature="e#38#59#0#PHP" expanded="true" />
+            <element signature="e#229#458#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

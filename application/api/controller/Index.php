@@ -38,11 +38,12 @@ class Index extends Controller
             $keys['code'] = $code;//如要刷新access_token，这里为$keys['refresh_token']
             $keys['redirect_uri'] = YouZanConfig::$REDIRECT_URL;
             $data = $token->get_token($type, $keys);
-            $data_in = array(
-                'content' => $data,
-                'create_time' => date("Y-m-d H:i:s"),
-            );
-            Db::table('t_test')->insert($data_in);
+
+            echo '<pre>';
+            var_dump(
+                $data
+        );
+            echo '</pre>';
         }
 
     }
