@@ -42,7 +42,7 @@ class Sqlite extends Connection
      */
     public function getFields($tableName)
     {
-        $this->initConnect(false);
+        $this->initConnect(true);
         list($tableName) = explode(' ', $tableName);
         $sql             = 'PRAGMA table_info( ' . $tableName . ' )';
         // 调试开始
@@ -76,7 +76,7 @@ class Sqlite extends Connection
      */
     public function getTables($dbName = '')
     {
-        $this->initConnect(false);
+        $this->initConnect(true);
         $sql = "SELECT name FROM sqlite_master WHERE type='table' "
             . "UNION ALL SELECT name FROM sqlite_temp_master "
             . "WHERE type='table' ORDER BY name";

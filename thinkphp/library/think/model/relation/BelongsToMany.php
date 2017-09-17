@@ -376,9 +376,7 @@ class BelongsToMany extends Relation
         // 关联查询封装
         $tableName = $this->query->getTable();
         $table     = $this->pivot->getTable();
-        $fields    = $this->getQueryFields($tableName);
-
-        $query = $this->query->field($fields)
+        $query     = $this->query->field($tableName . '.*')
             ->field(true, false, $table, 'pivot', 'pivot__');
 
         if (empty($this->baseQuery)) {

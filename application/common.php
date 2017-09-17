@@ -10,3 +10,17 @@
 // +----------------------------------------------------------------------
 
 // 应用公共文件
+
+function getsize($size, $format = 'kb')
+{
+    $p = 0;
+    if ($format == 'kb') {
+        $p = 1;
+    } elseif ($format == 'mb') {
+        $p = 2;
+    } elseif ($format == 'gb') {
+        $p = 3;
+    }
+    $size /= pow(1024, $p);
+    return number_format($size, 3);
+}

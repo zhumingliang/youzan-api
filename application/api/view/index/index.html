@@ -1,0 +1,98 @@
+<!--<extend name="Public/adminbase"/>-->
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有赞商品上传</title>
+    <link rel="stylesheet" type="text/css" href="/static/api/style/bootstrap.css" />
+    <script src='/static/api/style/jquery-1.10.2.min.js' ></script>
+    <script src="/static/api/style/bootstrap.js"></script>
+</head>
+
+<body>
+<form id="goods" action="{:url('Index/add')}" method="post" enctype="multipart/form-data" role="form">
+    <div class="container">
+        <div class="navbar navbar-default navbar-fixed-top"><h3>有赞商品上传</h3></div>
+        <br/><br/><br/><br/>
+        <div style="width:500px; text-align:center;margin:0 auto;">
+            <div class="input-group">
+                <a href="{:url('/api/index/download/type/1')}">EXCEL模版</a> |
+                <a href="{:url('/api/index/download/type/2')}">图片压缩包模板</a> |
+                <a href="{:url('/api/index/download/type/3')}">使用说明文档</a>
+            </div>
+            <br/>
+            <div class="input-group">
+                <div class="input-group-addon">Excel(xlsx , xls)</div>
+                <input type="file" id="inputfile" name="import" class="form-control">
+            </div>
+            <br/>
+            <div class="input-group">
+                <div class="input-group-addon">图片压缩包(zip)</div>
+                <input type="file" id="img_id" name="img" class="form-control">
+            </div>
+            <br/>
+            <button id="up" class="btn btn-info ">上传商品</button>
+
+
+        </div>
+    </div>
+
+
+</form>
+<form method="post" enctype="multipart/form-data" role="form">
+    <div style="width:500px; text-align:center;margin:0 auto;">
+    <div class="form-group" style="text-align:left;">
+        <p class="help-block">{$succ_goods}</p>
+        <p class="help-block">{$err_goods}</p>
+        <p class="help-block">{$sys_err}</p>
+    </div>
+    </div>
+</form>
+
+
+<div id="dataLoad" style="display:none"><!--页面载入显示-->
+    <table width=100% height=100% border=0 align=center valign=middle>
+        <tr height=50%>
+            <td align=center>&nbsp;</td>
+        </tr>
+        <tr>
+            <td align=center>
+                <img src="/static/api/img/loading.gif"/>
+
+            </td>
+        </tr>
+        <tr>
+            <td align=center>数据上传中，请稍后......</td>
+        </tr>
+        <tr height=50%>
+            <td align=center>&nbsp;</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+
+    $("#up").click(function () {
+
+        $("#goods").submit(function () {
+
+            $("#dataLoad").css('display', 'block');
+        });
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
