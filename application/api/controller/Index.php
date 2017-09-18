@@ -41,6 +41,7 @@ class Index extends Controller
                 //获取处理access_token失败
             }
             //处理access_token
+            $data = json_decode(get_php_file('access_token.php'));
             $access_token = $data['access_token'];
             if ($access_token) {
                 $data->expire_time = time() + 7000;
