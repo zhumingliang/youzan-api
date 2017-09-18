@@ -41,12 +41,12 @@ class Index extends Controller
                 //获取处理access_token失败
             }
             //处理access_token
-            $data = json_decode(get_php_file('access_token.php'));
+            $token_obj = json_decode(get_php_file('access_token.php'));
             $access_token = $data['access_token'];
             if ($access_token) {
-                $data->expire_time = time() + 7000;
-                $data->access_token = $access_token;
-                $this->set_php_file("access_token.php", json_encode($data));
+                $token_obj->expire_time = time() + 7000;
+                $token_obj->access_token = $access_token;
+                set_php_file("access_token.php", json_encode($token_obj));
             }
 
 
@@ -54,10 +54,5 @@ class Index extends Controller
 
     }
 
-    private function set_php_file($filename, $content)
-    {
-        $fp = fopen($filename, "w");
-        fwrite($fp, "<?php exit();?>" . $content);
-        fclose($fp);
-    }
+
 }
