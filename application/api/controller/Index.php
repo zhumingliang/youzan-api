@@ -37,7 +37,7 @@ class Index extends Controller
             $keys['code'] = $code;//如要刷新access_token，这里为$keys['refresh_token']
             $keys['redirect_uri'] = YouZanConfig::$REDIRECT_URL;
             $data = $token->get_token($type, $keys);
-            if (is_null($data['access_token'])) {
+            if (!is_null($data['access_token'])) {
                 echo $data['access_token'];
             }
 
