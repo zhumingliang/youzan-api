@@ -16,9 +16,10 @@ class Index extends Controller
     {
         try {
 
-            $token = new Token();
-            $r = $token->getAccessToken();
-            echo $r;
+            return view();
+           /* $token = new Token();
+            $r = $token->getAccessToken();*/
+
 
         } catch (Exception $e) {
             echo $e->getMessage();
@@ -27,6 +28,11 @@ class Index extends Controller
 
     }
 
+
+    public function upFile(){
+        $file = request()->param('import');
+        dump($file);
+    }
 
     public function callback(Request $request)
     {
@@ -48,11 +54,61 @@ class Index extends Controller
                 $token_obj->access_token = $access_token;
                 set_php_file("access_token.php", json_encode($token_obj));
             }
-
+            //access_token处理成功，跳转首页
+            return view();
 
         }
 
     }
 
+
+    /**
+     * 导入excel文件
+     * @param  string $file excel文件路径
+     * @return array        excel文件内容数组
+     */
+    private function import_excel($file)
+    {
+        // 判断文件是什么格式
+        $extension = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+        ini_set('max_execution_time', '0');
+        Loader::import('PHPExcel.PHPExcel');
+        // 判断使用哪种格式
+        Loader::import('PHPExcel.PHPExcel');
+        if ($extension == 'xlsx') {
+            $objReader = new \PHPExcel_Reader_Excel2007();
+            $objPHPExcel = $objReader->load($file);
+        } else if ($extension == 'xls') {
+            $objReader = new \PHPExcel_Reader_Excel5();
+            $objPHPExcel = $objReader->load($file);
+        } else if ($extension == 'csv') {
+            $PHPReader = new \PHPExcel_Reader_CSV();
+
+            //默认输入字符集
+            $PHPReader->setInputEncoding('GBK');
+
+            //默认的分隔符
+            $PHPReader->setDelimiter(',');
+
+            //载入文件
+            $objPHPExcel = $PHPReader->load($file);
+        }
+        $sheet = $objPHPExcel->getSheet(0);
+        // 取得总行数
+        $highestRow = $sheet->getHighestRow();
+        // 取得总列数
+        $highestColumn = $sheet->getHighestColumn();
+        //循环读取excel文件,读取一条,插入一条
+        $data = array();
+        //从第一行开始读取数据
+        for ($j = 1; $j <= $highestRow; $j++) {
+            //从A列读取数据
+            for ($k = 'A'; $k <= $highestColumn; $k++) {
+                // 读取单元格
+                $data[$j][] = $objPHPExcel->getActiveSheet()->getCell("$k$j")->getValue();
+            }
+        }
+        return $data;
+    }
 
 }
