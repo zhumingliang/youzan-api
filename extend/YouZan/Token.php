@@ -29,13 +29,6 @@ class Token
              */
             $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state=teststate&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
             return $url;
-            /* $res = json_decode($this->httpGet($url));
-             $access_token = $res->access_token;
-             if ($access_token) {
-                 $data->expire_time = time() + 7000;
-                 $data->access_token = $access_token;
-                 $this->set_php_file("access_token.php", json_encode($data));
-             }*/
         } else {
             $access_token = $data->access_token;
         }
@@ -46,13 +39,6 @@ class Token
     private function get_php_file($filename)
     {
         return trim(substr(file_get_contents($filename), 15));
-    }
-
-    private function set_php_file($filename, $content)
-    {
-        $fp = fopen($filename, "w");
-        fwrite($fp, "<?php exit();?>" . $content);
-        fclose($fp);
     }
 
 

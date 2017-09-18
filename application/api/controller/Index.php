@@ -37,12 +37,26 @@ class Index extends Controller
             $keys['code'] = $code;//如要刷新access_token，这里为$keys['refresh_token']
             $keys['redirect_uri'] = YouZanConfig::$REDIRECT_URL;
             $data = $token->get_token($type, $keys);
-            if (!is_null($data['access_token'])) {
-                echo $data['access_token'];
+            if (!$data) {
+                //获取处理access_token失败
+            }
+            //处理access_token
+            $access_token = $data['access_token'];
+            if ($access_token) {
+                $data->expire_time = time() + 7000;
+                $data->access_token = $access_token;
+                $this->set_php_file("access_token.php", json_encode($data));
             }
 
 
         }
 
+    }
+
+    private function set_php_file($filename, $content)
+    {
+        $fp = fopen($filename, "w");
+        fwrite($fp, "<?php exit();?>" . $content);
+        fclose($fp);
     }
 }
