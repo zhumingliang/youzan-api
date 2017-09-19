@@ -43,7 +43,7 @@ class Index extends Controller
         $file_name = $info->getPathname();
         $result = $this->import_excel($file_name);*/
         $res = $this->addGoods();
-        return ['ret_code' => 4, 'msg' => 'access_token过期', 'url' => $res['url']];
+        //return ['ret_code' => 4, 'msg' => 'access_token过期', 'url' => $res['url']];
 
     }
 
@@ -84,31 +84,31 @@ class Index extends Controller
             return $token_res;
         }
         $access_token = $token_res['access_token'];
-        echo $access_token;
-        /*        $client = new YZTokenClient($token);
 
-                $method = 'youzan.item.create'; //要调用的api名称
-                $api_version = '3.0.0'; //要调用的api版本号
+        $client = new YZTokenClient($token);
 
-                $my_params = [
-                    'title' => 'aaatest-standard5566',
-                    'price' => '10000',
-                    'image_ids' => '845910482',
-                    'desc' => 'http://n.sinaimg.cn/mil/8_img/upload/f8bc40b5/20170710/-Bec-fyhwret0362019.jpg',
-                    'item_no' => '6933285600396',
-                    'sku_images' => '[{"v":"22","img_url":"https://img.yzcdn.cn/upload_files/2016/09/24/1a6004ee7c5ecd970affba1999c7e0e1.jpg"}]',
-                    'sku_stocks' => '[{"sku_id":3337,"code":"sdsfdsfs","price":10000,"quantity":100,"skus":[{"k":"颜色","kid":1,"v":"22","vid":1196}]}]',
-                    'auto_listing_time' => '222112332',
-                ];
+        $method = 'youzan.item.create'; //要调用的api名称
+        $api_version = '3.0.0'; //要调用的api版本号
 
-                $my_files = [
-                ];
+        $my_params = [
+            'title' => 'aaatest-standard5566',
+            'price' => '10000',
+            'image_ids' => '845910482',
+            'desc' => 'http://n.sinaimg.cn/mil/8_img/upload/f8bc40b5/20170710/-Bec-fyhwret0362019.jpg',
+            'item_no' => '6933285600396',
+            'sku_images' => '[{"v":"22","img_url":"https://img.yzcdn.cn/upload_files/2016/09/24/1a6004ee7c5ecd970affba1999c7e0e1.jpg"}]',
+            'sku_stocks' => '[{"sku_id":3337,"code":"sdsfdsfs","price":10000,"quantity":100,"skus":[{"k":"颜色","kid":1,"v":"22","vid":1196}]}]',
+            'auto_listing_time' => '222112332',
+        ];
 
-                echo '<pre>';
-                var_dump(
-                    $client->post($method, $api_version, $my_params, $my_files)
-                );
-                echo '</pre>';*/
+        $my_files = [
+        ];
+
+        echo '<pre>';
+        var_dump(
+            $client->post($method, $api_version, $my_params, $my_files)
+        );
+        echo '</pre>';
     }
 
 

@@ -4,9 +4,7 @@
     <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/Index.php" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/view/index/index.html" afterPath="$PROJECT_DIR$/application/api/view/index/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/YouZan/Token.php" afterPath="$PROJECT_DIR$/extend/YouZan/Token.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/api/style/index.js" afterPath="$PROJECT_DIR$/public/static/api/style/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/access_token.php" afterPath="$PROJECT_DIR$/public/access_token.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,22 +19,13 @@
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+            <state relative-caret-position="186">
+              <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
               <folding>
                 <element signature="e#38#59#0#PHP" expanded="true" />
-                <element signature="e#3659#5108#0#PHP" expanded="false" />
+                <element signature="e#1083#2112#0#PHP" expanded="false" />
+                <element signature="e#3470#4919#0#PHP" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="access_token.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/access_token.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -71,8 +60,8 @@
       <file leaf-file-name="Token.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extend/YouZan/Token.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="263">
+              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -117,7 +106,6 @@
         <option value="$PROJECT_DIR$/extend/YZApiProtocol.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/extend/YouZanLib/Token.php" />
-        <option value="$PROJECT_DIR$/public/access_token.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/application/api/controller/UpFile.php" />
@@ -129,9 +117,10 @@
         <option value="$PROJECT_DIR$/application/api/common.php" />
         <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$PROJECT_DIR$/public/static/api/style/ajaxfileupload.js" />
-        <option value="$PROJECT_DIR$/extend/YouZan/Token.php" />
         <option value="$PROJECT_DIR$/application/api/view/index/index.html" />
         <option value="$PROJECT_DIR$/public/static/api/style/index.js" />
+        <option value="$PROJECT_DIR$/extend/YouZan/Token.php" />
+        <option value="$PROJECT_DIR$/public/access_token.php" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
       </list>
     </option>
@@ -298,7 +287,7 @@
       <workItem from="1505636612016" duration="4738000" />
       <workItem from="1505652421554" duration="17002000" />
       <workItem from="1505744861710" duration="505000" />
-      <workItem from="1505777425863" duration="9217000" />
+      <workItem from="1505777425863" duration="9687000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1505465791049</created>
@@ -587,11 +576,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505716342550</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="测试">
+      <created>1505829541273</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1505829541273</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41740000" />
+    <option name="totallyTimeSpent" value="42210000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -909,22 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/access_token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extend/YouZan/Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -940,13 +920,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/access_token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="85" lean-forward="false" selection-start-line="0" selection-start-column="85" selection-end-line="0" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/YouZan/Token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+        <state relative-caret-position="186">
+          <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <element signature="e#3659#5108#0#PHP" expanded="false" />
+            <element signature="e#1083#2112#0#PHP" expanded="false" />
+            <element signature="e#3470#4919#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
