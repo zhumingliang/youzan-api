@@ -28,36 +28,11 @@ class Token
              * 1.生成管理员授权链接
              */
             $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state=teststate&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
-            return $url;
+            return ['res' => 0, 'url' => $url];
         }
-        
+
         $access_token = $data->access_token;
-        return $access_token;
-    }
-
-
-    public function getToken($code)
-    {
-        try {
-            //检测token是否过期
-
-            $token = new YZGetTokenClient(YouZanConfig::$CLIENT_ID, YouZanConfig::$CLIENT_SECRET);
-            $type = 'oauth';//如要刷新access_token，type值为refresh_token
-            $keys['code'] = $code;//如要刷新access_token，这里为$keys['refresh_token']
-            $keys['redirect_uri'] = '';
-
-
-            $t = $token->get_token($type, $keys);
-            $data = array(
-                'content' => $t,
-                'create_time' => date("Y-m-d H:i:s"),
-            );
-            Db::table('t_test')->insert($data);
-
-        } catch (Exception $e) {
-            echo $e->getMessage();
-        }
-
+        return ['res' => 1, 'access_token' => $access_token];
     }
 
 

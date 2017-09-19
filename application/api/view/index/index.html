@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>有赞商品上传</title>
     <link rel="stylesheet" type="text/css" href="/static/api/style/bootstrap.css"/>
-<script type="text/javascript">
-    var SCOPE={
-        'index_url':'{:url(\'api/Index/upFile\')}',
-    }
-
-</script>
+    <script type="text/javascript">
+        var SCOPE = {
+            'up_url': '{:url(\'/api/index/upFile\')}'
+        };
+    </script>
 </head>
 
 <body>
-<form  enctype="multipart/form-data" role="form">
+<form id="goods" enctype="multipart/form-data" role="form">
     <div class="container">
         <div class="navbar navbar-default navbar-fixed-top"><h3>有赞商品上传</h3></div>
         <br/><br/><br/><br/>
@@ -27,22 +26,22 @@
             <br/>
             <div class="input-group">
                 <div class="input-group-addon">Excel(xlsx , xls)</div>
-                <input type="file" id="input_file" name="import" class="form-control">
+                <input type="file" id="inputfile" name="excel" class="form-control">
             </div>
             <br/>
             <div class="input-group">
                 <div class="input-group-addon">图片压缩包(zip)</div>
-                <input type="file" id="img_id" name="img" class="form-control">
+                <input type="file" id="img_id" name="img_zip" class="form-control">
             </div>
             <br/>
-            <button type='button' id="up" class="btn btn-info ">上传商品</button>
+            <button id="up" type="button" class="btn btn-info ">上传商品</button>
 
 
         </div>
     </div>
 
-</form>
 
+</form>
 
 <div id="dataLoad" style="display:none"><!--页面载入显示-->
     <table width=100% height=100% border=0 align=center valign=middle>
@@ -64,11 +63,122 @@
     </table>
 </div>
 
+<div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">新增商品结果返回</h4>
+            </div>
+            <div class="modal-body">
+
+
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="username" class="col-sm-2 control-label">名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="username" placeholder="请输入代理商名称">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class=" control-label">上传成功商品：</label>
+                        <div class="col-sm-10">
+                            <label id="" class="control-label">上传成功商品：</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="col-sm-2 control-label">上传失败商品：</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="phone" placeholder="请输入手机号">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+
+<div id="ReturnModal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">新增商品结果返回</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-horizontal">
+                        <div id="group_success" class="form-group">
+                            <div class="col-sm-2">
+                                <label class="control-label">上传成功商品：</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="success_msg" class="control-label text-align:lef">特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服，特别漂亮羽绒服</label>
+                            </div>
+                        </div>
+                        <div id="group_fail" class="form-group">
+                            <div class="col-sm-2">
+                                <label class="control-label ">上传失败商品：</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="fail_msg" class="control-label text-align:lef">特别漂亮羽绒服，失败原因：图片不存在；特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在</label>
+                            </div>
+                        </div>
+                        <div id="sys_fail" class="form-group">
+                            <div class="col-sm-2">
+                                <label class="control-label">上传失败原因：</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label id="sys_error_msg" class="control-label text-align:lef">特别漂亮羽绒服，失败原因：图片不存在；特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在特别漂亮羽绒服，失败原因：图片不存在</label>
+                            </div>
+                        </div>
+                        <div id="access_token" class="form-group">
+                            <div class="col-sm-5">
+                                <label class="control-label ">access_token过期，请点击链接授权：</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <a id="url" ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 
 <script src='/static/api/style/jquery-1.10.2.min.js'></script>
 <script src="/static/api/style/bootstrap.js"></script>
 <script src="/static/api/style/index.js"></script>
+
+<!--<script type="text/javascript">
+
+
+    $("#up").click(function () {
+
+        $("#goods").submit(function () {
+
+            $("#dataLoad").css('display', 'block');
+        });
+    });
+
+</script>-->
 
 
 
