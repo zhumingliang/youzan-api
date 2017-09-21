@@ -526,4 +526,13 @@ class Index extends Controller
             return $uuid;
         }
     }
+
+/*.gitignore
+.idea
+public/img/
+public/imgZip/*
+public/uploads/*
+public/access_token.php
+.idea/workspace.xml*/
+
 }
