@@ -3,5 +3,6 @@
 public/img/
 public/imgZip/*
 public/uploads/*
+public/token/*
 public/access_token.php
 .idea/workspace.xml

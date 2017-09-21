@@ -15,12 +15,22 @@ class Index extends Controller
 {
     public function index()
     {
+        session('id', Request()->param('id'));
         return view();
 
     }
 
 
     public function upFile()
+    {
+
+        //检测token
+        $token = new Token();
+        $token_res = $token->getAccessToken();
+        print_r($token_res);
+    }
+
+    public function upFile2()
     {
         try {
 
@@ -52,6 +62,10 @@ class Index extends Controller
                 //access_token过期，需要点击授权
                 return ['ret_code' => 4, 'msg' => 'access_token过期', 'url' => $token_res['url']];
             }
+            if ($token_res['res'] == 3) {
+                return ['ret_code' => 5, 'msg' => $token_res['msg']];
+            }
+
 
             $access_token = $token_res['access_token'];
             $service = new YZService($access_token);
@@ -62,8 +76,8 @@ class Index extends Controller
 
                     $params['title'] = $v[0];
                     $params['quantity'] = $v[5];
-                    $params['price'] = $v[6]*100;
-                    $params['post_fee'] = $v[7]*100;
+                    $params['price'] = $v[6] * 100;
+                    $params['post_fee'] = $v[7] * 100;
                     $params['item_no'] = $v[8];
                     $params['origin_price'] = $v[9];
                     $params['item_weight'] = $v[11];
@@ -137,6 +151,7 @@ class Index extends Controller
     public function callback(Request $request)
     {
         $code = $request->param('code');
+        $state = $request->param('state');
         if (!is_null($code)) {
             $token = new YZGetTokenClient(YouZanConfig::$CLIENT_ID, YouZanConfig::$CLIENT_SECRET);
             $type = 'oauth';//如要刷新access_token，type值为refresh_token
@@ -148,11 +163,12 @@ class Index extends Controller
                 $this->error("access_token失败,请重新获取。");
             }
             //处理access_token
-            $token_obj = json_decode(get_php_file('access_token.php'));
+            $filename='token/'.$state.'.php';
+            $token_obj = json_decode(get_php_file($filename));
             $access_token = $data['access_token'];
             if ($access_token) {
-                $token_obj->expire_time = time() + 60 * 60 * 24 * 6;
                 $token_obj->access_token = $access_token;
+                $token_obj->expire_time = time() + 60 * 60 * 24 * 6;
                 set_php_file("access_token.php", json_encode($token_obj));
             }
             //access_token处理成功，跳转首
@@ -358,7 +374,7 @@ class Index extends Controller
                         { "k":"内存", "v":"1024G", } ] }
                         ]*/
         for ($i = 0; $i < $count; $i++) {
-            $arr_json[$i]['price'] = empty($sku_pri_arr[$i]) ? 100 : $sku_pri_arr[$i]*100;
+            $arr_json[$i]['price'] = empty($sku_pri_arr[$i]) ? 100 : $sku_pri_arr[$i] * 100;
         }
 
         for ($i = 0; $i < $count; $i++) {
