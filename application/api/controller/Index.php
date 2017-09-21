@@ -21,16 +21,8 @@ class Index extends Controller
     }
 
 
+
     public function upFile()
-    {
-
-        //检测token
-        $token = new Token();
-        $token_res = $token->getAccessToken();
-        print_r($token_res);
-    }
-
-    public function upFile2()
     {
         try {
 
