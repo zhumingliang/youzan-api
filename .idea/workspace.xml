@@ -18,24 +18,24 @@
       <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="165" column="38" lean-forward="false" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+            <state relative-caret-position="346">
+              <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <element signature="e#38#59#0#PHP" expanded="true" />
-                <element signature="e#406#4926#0#PHP" expanded="false" />
-                <element signature="e#6280#7499#0#PHP" expanded="false" />
-                <element signature="e#7506#7612#0#PHP" expanded="false" />
-                <element signature="e#7617#9021#0#PHP" expanded="false" />
-                <element signature="e#9099#9842#0#PHP" expanded="false" />
-                <element signature="e#9927#10957#0#PHP" expanded="false" />
-                <element signature="e#11121#12624#0#PHP" expanded="false" />
-                <element signature="e#12755#13571#0#PHP" expanded="false" />
-                <element signature="e#13578#14369#0#PHP" expanded="false" />
-                <element signature="e#14375#14859#0#PHP" expanded="false" />
-                <element signature="e#14865#15157#0#PHP" expanded="false" />
-                <element signature="e#15163#15510#0#PHP" expanded="false" />
-                <element signature="e#15516#16027#0#PHP" expanded="false" />
-                <element signature="e#16033#16599#0#PHP" expanded="false" />
+                <element signature="e#390#4910#0#PHP" expanded="false" />
+                <element signature="e#6264#7483#0#PHP" expanded="false" />
+                <element signature="e#7490#7596#0#PHP" expanded="false" />
+                <element signature="e#7601#9005#0#PHP" expanded="false" />
+                <element signature="e#9083#9826#0#PHP" expanded="false" />
+                <element signature="e#9911#10941#0#PHP" expanded="false" />
+                <element signature="e#11105#12608#0#PHP" expanded="false" />
+                <element signature="e#12739#13555#0#PHP" expanded="false" />
+                <element signature="e#13562#14353#0#PHP" expanded="false" />
+                <element signature="e#14359#14843#0#PHP" expanded="false" />
+                <element signature="e#14849#15141#0#PHP" expanded="false" />
+                <element signature="e#15147#15494#0#PHP" expanded="false" />
+                <element signature="e#15500#16011#0#PHP" expanded="false" />
+                <element signature="e#16017#16583#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -311,14 +311,7 @@
       <workItem from="1505987893808" duration="426000" />
       <workItem from="1506001072478" duration="141000" />
       <workItem from="1506001217157" duration="202000" />
-      <workItem from="1506001426277" duration="2790000" />
-    </task>
-    <task id="LOCAL-00012" summary="测试">
-      <created>1505636633650</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1505636633650</updated>
+      <workItem from="1506001426277" duration="3011000" />
     </task>
     <task id="LOCAL-00013" summary="测试">
       <created>1505636977653</created>
@@ -656,11 +649,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506003593455</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="测试">
+      <created>1506004227657</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1506004227657</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80574000" />
+    <option name="totallyTimeSpent" value="80795000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1013,24 +1013,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="165" column="38" lean-forward="false" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+        <state relative-caret-position="346">
+          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
-            <element signature="e#406#4926#0#PHP" expanded="false" />
-            <element signature="e#6280#7499#0#PHP" expanded="false" />
-            <element signature="e#7506#7612#0#PHP" expanded="false" />
-            <element signature="e#7617#9021#0#PHP" expanded="false" />
-            <element signature="e#9099#9842#0#PHP" expanded="false" />
-            <element signature="e#9927#10957#0#PHP" expanded="false" />
-            <element signature="e#11121#12624#0#PHP" expanded="false" />
-            <element signature="e#12755#13571#0#PHP" expanded="false" />
-            <element signature="e#13578#14369#0#PHP" expanded="false" />
-            <element signature="e#14375#14859#0#PHP" expanded="false" />
-            <element signature="e#14865#15157#0#PHP" expanded="false" />
-            <element signature="e#15163#15510#0#PHP" expanded="false" />
-            <element signature="e#15516#16027#0#PHP" expanded="false" />
-            <element signature="e#16033#16599#0#PHP" expanded="false" />
+            <element signature="e#390#4910#0#PHP" expanded="false" />
+            <element signature="e#6264#7483#0#PHP" expanded="false" />
+            <element signature="e#7490#7596#0#PHP" expanded="false" />
+            <element signature="e#7601#9005#0#PHP" expanded="false" />
+            <element signature="e#9083#9826#0#PHP" expanded="false" />
+            <element signature="e#9911#10941#0#PHP" expanded="false" />
+            <element signature="e#11105#12608#0#PHP" expanded="false" />
+            <element signature="e#12739#13555#0#PHP" expanded="false" />
+            <element signature="e#13562#14353#0#PHP" expanded="false" />
+            <element signature="e#14359#14843#0#PHP" expanded="false" />
+            <element signature="e#14849#15141#0#PHP" expanded="false" />
+            <element signature="e#15147#15494#0#PHP" expanded="false" />
+            <element signature="e#15500#16011#0#PHP" expanded="false" />
+            <element signature="e#16017#16583#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
