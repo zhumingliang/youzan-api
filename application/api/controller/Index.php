@@ -527,12 +527,5 @@ class Index extends Controller
         }
     }
 
-/*.gitignore
-.idea
-public/img/
-public/imgZip/*
-public/uploads/*
-public/access_token.php
-.idea/workspace.xml*/
 
 }
