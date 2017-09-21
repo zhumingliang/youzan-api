@@ -25,8 +25,8 @@ $("#up").click(function () {
             } else if (ret_code == 1) {
                 $("#sys_fail").css('display', 'none');
                 $("#access_token").css('display', 'none');
-                $("#group_success").html(data['success_msg']);
-                $("#group_fail").html(data['error_msg']);
+                $("#success_msg").html(data['success_msg']);
+                $("#fail_msg").html(data['error_msg']);
 
             } else if (ret_code == 4) {
                 //access_token过期
@@ -37,6 +37,8 @@ $("#up").click(function () {
                 $("#url").text(data['url'].substr(0, 50) + "............");
 
             }
+            $("#excel_id").val("");
+            $("#img_id").val("");
             $("#ReturnModal").modal();
 
         },
