@@ -7,7 +7,6 @@
  */
 function get_php_file($filename)
 {
-    $filename = 'token/' . $filename . '.php';
     //检查文件是否存在
     if (!is_file($filename)) {
         //不存在则创建文件
