@@ -1,64 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/api/controller/YZService.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170526/6b27c1fbb19e90bd3e22889b06d226af.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/2c05456e9212f6780cb2c9698da19ecb.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/38e7367b741a26dabe49749f533e2501.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/3b7728e7b2ba62b41cfb00c9263b14e5.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/490bda174dc702447ee5bb3b4fded3a1.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/50e6da5ab0c1beb0c25ae12e862ad3bc.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/5a462659970cd82cb5cf2db3779156da.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/71e362ea440e13599c957f4eac0c2657.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/75f2c2f9c356c44d20f027e477688e0d.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/9a8cecd569a448c9d35e0edea59c0f17.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/a4bebb01a5b92d9c16777f28546a2542.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/c4fcc3f5e243e483b398c2f31eb89a0b.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170615/dd8a473b01cfab9e8f628a656ba7f9b2.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/34d31a45a59e08f4d97c3745f5458d6b.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/35485cb3eae2e5d2dcbeeb5e2f71e200.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/359fd408240b06b6016c113e25903e9a.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/4d851d9b198bda332f96f6c1c8d2172c.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/51a87c11fd15248cba227522aedd2a6c.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/568e1843caf3bd820d26c597db1c69ea.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/5bef8d0aa338910fe1e5d54f2c8badea.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/5dc728704fc37577fbc7fc8eb84f9c85.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/6b7e2936f85efa7d6522f7d1fcfce194.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/711636e8293ed8d8330cb25bc7f2d371.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/77ec8d6aa4bef314affb08d19ee8f9ee.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/89d6957d816eeb82ebd0f716e4e3d17f.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/8d573140bad817967c560755b8918f6e.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/9accec96940c3c1dc8172a6611ca03a9.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/9b211528dba1e6746ad4ca4d70b7a16d.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/b286610dd7984df6f2df884c3156ab8c.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/d9e1471c0fef61f9e9774d53bd6d3e18.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/e7cbb27ca9c9b6e9291326c85956c13d.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/ec6de5d4f2bff2376663f911e3822457.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/f417342a7ed78d58c7a71635d63094f5.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170801/fd52a74b1957dc2705e7aff8cfc4a55a.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/03ea971d1925fcde72f42d86ee6ab91d.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/08588b42f0575f977ce3efde3eaa145e.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/3a80cac152b981068e1d48f5717cb78d.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/4bf1441f6720ff62a0d8f1ad0e6c2fbb.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/5e500a9f53b8cdbfc98c8fa16eff8032.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/6858bb99c24d6d011173aaca6a5b72c4.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/69b77f01aaee11f574046f123c38f332.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/76b58f561eeb8ab765ae3714e05d83de.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/8e72f6731e0c2a99b915a69d0fda64e7.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/a4cd01be575a251e9f99cc550697dc58.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/c70b60d7d364e22ddd690579a9cdf503.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/df4dfb13763d16e9b336cdce6673c791.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/e256f369a11e830ec2921ed4ae8a20bd.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/ece9090c43fc6fec8bd6d52c5ee511c7.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/fa05ba64d4e533e6bb271d1a62ed111e.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/20170802/fc37e4ba3a53c79d6489b4d4c63a2470.xlsx" afterPath="" />
+    <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="测试">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/common.php" afterPath="$PROJECT_DIR$/application/api/common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/Index.php" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/YouZan/YouZanConfig.php" afterPath="$PROJECT_DIR$/extend/YouZan/YouZanConfig.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/access_token.php" afterPath="$PROJECT_DIR$/public/access_token.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/api/style/index.js" afterPath="$PROJECT_DIR$/public/static/api/style/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,73 +15,12 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="153" column="47" lean-forward="true" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
-              <folding>
-                <element signature="e#38#59#0#PHP" expanded="true" />
-                <element signature="e#5795#7014#0#PHP" expanded="false" />
-                <element signature="e#7132#8536#0#PHP" expanded="false" />
-                <element signature="e#8614#9357#0#PHP" expanded="false" />
-                <element signature="e#9442#10472#0#PHP" expanded="false" />
-                <element signature="e#10636#12136#0#PHP" expanded="false" />
-                <element signature="e#12267#13083#0#PHP" expanded="false" />
-                <element signature="e#13090#13881#0#PHP" expanded="false" />
-                <element signature="e#13887#14371#0#PHP" expanded="false" />
-                <element signature="e#14377#14669#0#PHP" expanded="false" />
-                <element signature="e#14675#15022#0#PHP" expanded="false" />
-                <element signature="e#15028#15539#0#PHP" expanded="false" />
-                <element signature="e#15545#16111#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Jump.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thinkphp/library/traits/controller/Jump.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1392">
-              <caret line="75" column="23" lean-forward="false" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+            <state relative-caret-position="144">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YZGetTokenClient.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extend/YouZan/lib/YZGetTokenClient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/static/api/style/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="34" column="28" lean-forward="false" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/view/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="137" column="41" lean-forward="false" selection-start-line="137" selection-start-column="33" selection-end-line="137" selection-end-column="41" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -189,7 +73,6 @@
         <option value="$PROJECT_DIR$/extend/YZApiProtocol.php" />
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/extend/YouZanLib/Token.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/application/api/controller/UpFile.php" />
         <option value="$PROJECT_DIR$/application/config.php" />
@@ -206,6 +89,7 @@
         <option value="$PROJECT_DIR$/public/access_token.php" />
         <option value="$PROJECT_DIR$/public/static/api/style/index.js" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -294,22 +178,19 @@
               <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="youzan-api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="img" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="youzan-api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="imgZip" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="youzan-api" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="api" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="style" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -372,7 +253,7 @@
       <workItem from="1505895040334" duration="694000" />
       <workItem from="1505896056129" duration="6820000" />
       <workItem from="1505913189404" duration="9116000" />
-      <workItem from="1505953982661" duration="26000" />
+      <workItem from="1505953982661" duration="1453000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1505465791049</created>
@@ -675,11 +556,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505830075243</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="测试">
+      <created>1505954015500</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1505954015500</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67608000" />
+    <option name="totallyTimeSpent" value="69035000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -692,14 +580,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -731,7 +618,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/a.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -829,13 +715,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extend/YouZanLib/Token.php" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/build.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -961,6 +840,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,10 +909,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="153" column="47" lean-forward="true" selection-start-line="153" selection-start-column="47" selection-end-line="153" selection-end-column="47" />
+        <state relative-caret-position="469">
+          <caret line="155" column="29" lean-forward="false" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
             <element signature="e#5795#7014#0#PHP" expanded="false" />
@@ -1048,6 +936,14 @@
             <element signature="e#15028#15539#0#PHP" expanded="false" />
             <element signature="e#15545#16111#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

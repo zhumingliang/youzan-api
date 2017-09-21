@@ -1,1 +1,6 @@
-
+.gitignore
+.idea
+public/img/
+public/imgZip/*
+public/uploads/*
+.idea/workspace.xml
