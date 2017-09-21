@@ -62,8 +62,8 @@ class Index extends Controller
 
                     $params['title'] = $v[0];
                     $params['quantity'] = $v[5];
-                    $params['price'] = $v[6];
-                    $params['post_fee'] = $v[7];
+                    $params['price'] = $v[6]*100;
+                    $params['post_fee'] = $v[7]*100;
                     $params['item_no'] = $v[8];
                     $params['origin_price'] = $v[9];
                     $params['item_weight'] = $v[11];
@@ -358,7 +358,7 @@ class Index extends Controller
                         { "k":"内存", "v":"1024G", } ] }
                         ]*/
         for ($i = 0; $i < $count; $i++) {
-            $arr_json[$i]['price'] = empty($sku_pri_arr[$i]) ? 1 : (int)$sku_pri_arr[$i];
+            $arr_json[$i]['price'] = empty($sku_pri_arr[$i]) ? 100 : $sku_pri_arr[$i]*100;
         }
 
         for ($i = 0; $i < $count; $i++) {
