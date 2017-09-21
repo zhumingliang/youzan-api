@@ -25,7 +25,7 @@ class YouZanConfig
      * 开发者后台所填写的回调地址
      * @var string
      */
-    public static $REDIRECT_URL = 'http://youzan.partywall.cn:8080/public/index.php/api/index/callback';
+    public static $REDIRECT_URL = 'http://youzan.partywall.cn:8080/youzan-api/public/index.php/api/index/callback';
 
     /**
      * 接口版本
