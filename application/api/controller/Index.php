@@ -15,11 +15,12 @@ class Index extends Controller
 {
     public function index()
     {
-        session('id', Request()->param('id'));
+        if (!empty(Request()->param('id'))) {
+            session('id', Request()->param('id'));
+        }
         return view();
 
     }
-
 
 
     public function upFile()
@@ -155,7 +156,7 @@ class Index extends Controller
                 $this->error("access_token失败,请重新获取。");
             }
             //处理access_token
-            $filename='token/'.$state.'.php';
+            $filename = 'token/' . $state . '.php';
             $token_obj = json_decode(get_php_file($filename));
             $access_token = $data['access_token'];
             if ($access_token) {
@@ -164,6 +165,7 @@ class Index extends Controller
                 set_php_file("access_token.php", json_encode($token_obj));
             }
             //access_token处理成功，跳转首
+            $this->redirect('http://youzan.partywall.cn:8080/youzan-api/public/index.php?id='.$state);
             return view('index');
 
         }
