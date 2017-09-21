@@ -15,9 +15,11 @@ class Index extends Controller
 {
     public function index()
     {
-        if (!session('id')) {
-            session('id', Request()->param('id'));
+        $id = Request()->param('id');
+        if (!empty($id)) {
+            session('id', $id);
         }
+
         return view();
 
     }
