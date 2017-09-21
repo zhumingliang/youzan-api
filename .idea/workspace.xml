@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/Index.php" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extend/YouZan/YouZanConfig.php" afterPath="$PROJECT_DIR$/extend/YouZan/YouZanConfig.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +15,7 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -45,6 +45,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
               <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YouZanConfig.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extend/YouZan/YouZanConfig.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="27" column="73" lean-forward="false" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -138,7 +148,6 @@
         <option value="$PROJECT_DIR$/extend/YouZan/lib/YZGetTokenClient.php" />
         <option value="$PROJECT_DIR$/application/common.php" />
         <option value="$PROJECT_DIR$/public/static/api/style/ajaxfileupload.js" />
-        <option value="$PROJECT_DIR$/extend/YouZan/YouZanConfig.php" />
         <option value="$PROJECT_DIR$/extend/YouZan/lib/YZHttpClient.php" />
         <option value="$PROJECT_DIR$/application/api/controller/YZService.php" />
         <option value="$PROJECT_DIR$/application/config.php" />
@@ -150,6 +159,7 @@
         <option value="$PROJECT_DIR$/application/api/common.php" />
         <option value="$PROJECT_DIR$/extend/YouZan/Token.php" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
+        <option value="$PROJECT_DIR$/extend/YouZan/YouZanConfig.php" />
       </list>
     </option>
   </component>
@@ -223,13 +233,8 @@
             <path>
               <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="youzan-api" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youzan-api" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="token" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="extend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="YouZan" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="youzan-api" type="b2602c69:ProjectViewProjectNode" />
@@ -305,14 +310,7 @@
       <workItem from="1505987893808" duration="426000" />
       <workItem from="1506001072478" duration="141000" />
       <workItem from="1506001217157" duration="202000" />
-      <workItem from="1506001426277" duration="1320000" />
-    </task>
-    <task id="LOCAL-00007" summary="测试">
-      <created>1505633832611</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1505633832611</updated>
+      <workItem from="1506001426277" duration="1453000" />
     </task>
     <task id="LOCAL-00008" summary="测试">
       <created>1505635074258</created>
@@ -650,11 +648,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506002600695</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="测试">
+      <created>1506002754001</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1506002754001</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79104000" />
+    <option name="totallyTimeSpent" value="79237000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -849,14 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extend/YouZan/YouZanConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/extend/Zip/Zip.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1656">
@@ -1025,6 +1022,14 @@
             <element signature="e#15298#15809#0#PHP" expanded="false" />
             <element signature="e#15815#16381#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/YouZan/YouZanConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="27" column="73" lean-forward="false" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
