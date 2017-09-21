@@ -145,6 +145,7 @@ class Index extends Controller
     {
         $code = $request->param('code');
         $state = $request->param('state');
+        echo $state;
         if (!is_null($code)) {
             $token = new YZGetTokenClient(YouZanConfig::$CLIENT_ID, YouZanConfig::$CLIENT_SECRET);
             $type = 'oauth';//如要刷新access_token，type值为refresh_token
@@ -162,14 +163,18 @@ class Index extends Controller
             if ($access_token) {
                 $token_obj->access_token = $access_token;
                 $token_obj->expire_time = time() + 60 * 60 * 24 * 6;
-                set_php_file("access_token.php", json_encode($token_obj));
+                set_php_file($filename, json_encode($token_obj));
             }
             //access_token处理成功，跳转首
-            $this->redirect('http://youzan.partywall.cn:8080/youzan-api/public/index.php?id='.$state);
-            return view('index');
-
+            $this->redirect('http://youzan.partywall.cn:8080/youzan-api/public/index.php?id=' . $state);
         }
 
+    }
+
+
+    public function getURL()
+    {
+        echo $this->guid();
     }
 
     private function getImageId($service, $name)
