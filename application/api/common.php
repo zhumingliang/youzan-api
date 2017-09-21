@@ -21,3 +21,4 @@ function set_php_file($filename, $content)
     fwrite($fp, "<?php exit();?>" . $content);
     fclose($fp);
 }
+
