@@ -31,7 +31,7 @@ class Token
         if ($data->expire_time < time()) {
             // access_token过期，需要管理员授权获取code
             //1.生成管理员授权链接
-            $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state='" . $id . "'&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
+            $url = "https://open.youzan.com/oauth/authorize?client_id=" . YouZanConfig::$CLIENT_ID . "&response_type=code&state=" . $id . "&redirect_uri=" . YouZanConfig::$REDIRECT_URL;
             return ['res' => 0, 'url' => $url];
         }
 
