@@ -33,6 +33,7 @@ class YZService
         $my_files = [
         ];
         $post_res = $client->post($method, $api_version, $my_params, $my_files);
+        print_r($post_res);
         if (isset($post_res['error_response'])) {
             return ['code' => 0, 'msg' => $post_res['error_response']['msg']];
         }
@@ -57,6 +58,7 @@ class YZService
         ];
         $tag_arr = array();
         $res = $client->post($method, $api_version, $my_params, array());
+        print_r($res);
         $tags = $res['response']['tags'];
         if (count($tags)) {
             foreach ($tags as $k => $v) {
@@ -85,7 +87,7 @@ class YZService
         ];
 
         $res = $client->post($method, $api_version, $my_params, array());
-
+        print_r($res);
         if (isset($res['error_response'])) {
             return ['code' => 0, 'msg' => $res['error_response']['msg']];
         }
@@ -109,6 +111,7 @@ class YZService
             ],
         ];
         $res = $client->post($method, $api_version, $my_params, $my_files);
+        print_r($res);
         if (isset($post_res['error_response'])) {
             return ['code' => 0, 'msg' => $res['error_response']['msg']];
         }
