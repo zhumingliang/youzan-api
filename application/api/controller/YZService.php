@@ -33,7 +33,6 @@ class YZService
         $my_files = [
         ];
         $post_res = $client->post($method, $api_version, $my_params, $my_files);
-        print_r($post_res);
         if (isset($post_res['error_response'])) {
             return ['code' => 0, 'msg' => $post_res['error_response']['msg']];
         }
