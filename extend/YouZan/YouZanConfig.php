@@ -48,12 +48,18 @@ class YouZanConfig
     /**
      * @var string
      */
-    public static $GET_TAG_LIST='youzan.itemcategories.taglist.search';
+    public static $GET_TAG_LIST = 'youzan.itemcategories.taglist.search';
 
     /**
      * @var string
      */
-    public static $UP_IMG='youzan.materials.storage.platform.img.upload';
+    public static $UP_IMG = 'youzan.materials.storage.platform.img.upload';
+
+    /**
+     * 请求页面地址
+     * @var string
+     */
+    public static $LOGIN_URL = 'http://youzan.partywall.cn:8080/youzan-api/public/index.php?id=';
 
 
 }

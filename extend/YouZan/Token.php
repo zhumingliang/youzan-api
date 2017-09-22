@@ -8,11 +8,6 @@
 
 namespace YouZan;
 
-
-use think\Db;
-use think\Exception;
-use YouZan\lib\YZGetTokenClient;
-
 class Token
 {
 
