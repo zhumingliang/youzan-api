@@ -31,6 +31,19 @@ class Index extends Controller
 
             $success_msg = "";
             $error_msg = "";
+
+            //检测token
+            $token = new Token();
+            $token_res = $token->getAccessToken();
+            if (!$token_res['res']) {
+                //access_token过期，需要点击授权
+                return ['ret_code' => 4, 'msg' => 'access_token过期', 'url' => $token_res['url']];
+            }
+            if ($token_res['res'] == 3) {
+                return ['ret_code' => 5, 'msg' => $token_res['msg']];
+            }
+            $access_token = $token_res['access_token'];
+            $service = new YZService($access_token);
             $file_excel = request()->file('excel');
             $file_img = request()->file('img_zip');
             if (is_null($file_img)) {
@@ -49,26 +62,10 @@ class Index extends Controller
             if (!count($result_excel)) {
                 return ['ret_code' => 0, 'msg' => 'EXCEL为空'];
             }
-
-            //检测token
-            $token = new Token();
-            $token_res = $token->getAccessToken();
-            if (!$token_res['res']) {
-                //access_token过期，需要点击授权
-                return ['ret_code' => 4, 'msg' => 'access_token过期', 'url' => $token_res['url']];
-            }
-            if ($token_res['res'] == 3) {
-                return ['ret_code' => 5, 'msg' => $token_res['msg']];
-            }
-
-
-            $access_token = $token_res['access_token'];
-            $service = new YZService($access_token);
             //获取所有分组
             $tags = $service->getTagList();
             foreach ($result_excel as $k => $v) {
                 if ($k > 1 && !empty(preg_replace('# #', '', $v[0]))) {
-
                     $params['title'] = $v[0];
                     $params['quantity'] = $v[5];
                     $params['price'] = $v[6] * 100;
@@ -102,6 +99,7 @@ class Index extends Controller
                         continue;
                     }
 
+                    //$sku = '[{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"白色"},{"k":"尺寸","v":"L"}]},{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"白色"},{"k":"尺寸","v":"S"}]},{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"黑色"},{"k":"尺寸","v":"L"}]},{"item_no":3338,"code":"10","price":10000,"quantity":101,"skus":[{"k":"颜色","v":"黑色"},{"k":"尺寸","v":"S"}]}]';
                     $sku = $this->getSkuJson($v[1], $v[2], $v[3], $v[4]);
                     $params['sku_stocks'] = $sku;
 
@@ -116,11 +114,13 @@ class Index extends Controller
                     }
 
                     $image_res = $this->getImageId($service, $v[19]);
+
                     if (!$image_res['code']) {
                         $error_msg .= $v[0] . "--失败原因：" . $image_res['msg'] . ";";
                         continue;
                     }
                     $params['image_ids'] = $image_res['image_ids'];
+                    //$params['image_ids'] = 869283374;
 
                     $add_goods_res = $service->addGoods($params);
                     if (!$add_goods_res['code']) {
@@ -366,24 +366,17 @@ class Index extends Controller
         $arr_json = array();
 
 
-        /*[ { "price":10000, "quantity":100, "item_no":"MOYU-1",
-
-                        "skus":[ { "k":"颜色", "v":"绿色", },
-
-                        { "k":"尺寸", "v":"l", },
-
-                        { "k":"内存", "v":"1024G", } ] }
-                        ]*/
         for ($i = 0; $i < $count; $i++) {
-            $arr_json[$i]['price'] = empty($sku_pri_arr[$i]) ? 100 : $sku_pri_arr[$i] * 100;
+            $arr_json[$i]['item_no'] = empty($code_arr[$i]) ? '' : $code_arr[$i];
+            $arr_json[$i]['code'] = $i + 1;
         }
 
         for ($i = 0; $i < $count; $i++) {
-            $arr_json[$i]['quantity'] = empty($sku_stock_arr[$i]) ? 0 : $sku_stock_arr[$i];
+            $arr_json[$i]['price'] = empty($sku_pri_arr[$i]) ? 100 : (int)$sku_pri_arr[$i] * 100;
         }
 
         for ($i = 0; $i < $count; $i++) {
-            $arr_json[$i]['itm_no'] = empty($code_arr[$i]) ? '' : $code_arr[$i];
+            $arr_json[$i]['quantity'] = empty($sku_stock_arr[$i]) ? 0 : (int)$sku_stock_arr[$i];
         }
 
         foreach ($sku_pro_arr as $k => $v) {
@@ -399,8 +392,6 @@ class Index extends Controller
         }
 
         $json_arr = json_encode($arr_json);
-
-
         return $json_arr;
 
     }
