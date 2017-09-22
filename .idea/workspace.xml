@@ -45,8 +45,8 @@
       <file leaf-file-name="YZService.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/YZService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+            <state relative-caret-position="-1371">
+              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="e#128#157#0#PHP" expanded="true" />
               </folding>
@@ -355,14 +355,7 @@
       <workItem from="1506001217157" duration="202000" />
       <workItem from="1506001426277" duration="8119000" />
       <workItem from="1506066914976" duration="381000" />
-      <workItem from="1506067371713" duration="6665000" />
-    </task>
-    <task id="LOCAL-00022" summary="测试">
-      <created>1505643209133</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1505643209133</updated>
+      <workItem from="1506067371713" duration="6882000" />
     </task>
     <task id="LOCAL-00023" summary="测试">
       <created>1505644030085</created>
@@ -700,11 +693,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506090882391</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="测试">
+      <created>1506092181584</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1506092181585</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92949000" />
+    <option name="totallyTimeSpent" value="93166000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1073,8 +1073,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/YZService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="113" column="22" lean-forward="false" selection-start-line="113" selection-start-column="22" selection-end-line="113" selection-end-column="22" />
+        <state relative-caret-position="-1371">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="e#128#157#0#PHP" expanded="true" />
           </folding>
