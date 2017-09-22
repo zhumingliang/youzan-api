@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/Index.php" afterPath="$PROJECT_DIR$/application/api/controller/Index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/controller/YZService.php" afterPath="$PROJECT_DIR$/application/api/controller/YZService.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,10 +15,10 @@
   <component name="ComposerSettings" doNotAsk="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
+            <state relative-caret-position="1449">
               <caret line="135" column="14" lean-forward="false" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
               <folding>
                 <element signature="e#38#59#0#PHP" expanded="true" />
@@ -43,14 +42,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YZService.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YZService.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/controller/YZService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="1968">
+              <caret line="87" column="8" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
               <folding>
                 <element signature="e#128#157#0#PHP" expanded="true" />
-                <element signature="e#2223#2863#0#PHP" expanded="false" />
+                <element signature="e#2177#2817#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -133,6 +132,7 @@
       <find>$error_msg</find>
       <find>getSkuJson</find>
       <find>getImageId</find>
+      <find>print_r</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,8 +175,8 @@
         <option value="$PROJECT_DIR$/extend/YouZan/Token.php" />
         <option value="$PROJECT_DIR$/extend/YouZan/YouZanConfig.php" />
         <option value="$PROJECT_DIR$/public/token/5139AD94-4C56-BA7F-FECE-67A52E4DFFAC.php" />
-        <option value="$PROJECT_DIR$/application/api/controller/YZService.php" />
         <option value="$PROJECT_DIR$/application/api/controller/Index.php" />
+        <option value="$PROJECT_DIR$/application/api/controller/YZService.php" />
       </list>
     </option>
   </component>
@@ -357,14 +357,7 @@
       <workItem from="1506001217157" duration="202000" />
       <workItem from="1506001426277" duration="8119000" />
       <workItem from="1506066914976" duration="381000" />
-      <workItem from="1506067371713" duration="7040000" />
-    </task>
-    <task id="LOCAL-00024" summary="测试">
-      <created>1505644195414</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1505644195414</updated>
+      <workItem from="1506067371713" duration="7207000" />
     </task>
     <task id="LOCAL-00025" summary="测试">
       <created>1505653170128</created>
@@ -702,11 +695,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506092448158</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="测试">
+      <created>1506092627614</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1506092627614</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93324000" />
+    <option name="totallyTimeSpent" value="93491000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1048,20 +1048,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api/controller/YZService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#128#157#0#PHP" expanded="true" />
-            <element signature="e#2223#2863#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="1449">
           <caret line="135" column="14" lean-forward="false" selection-start-line="135" selection-start-column="14" selection-end-line="135" selection-end-column="14" />
           <folding>
             <element signature="e#38#59#0#PHP" expanded="true" />
@@ -1080,6 +1069,17 @@
             <element signature="e#15501#15848#0#PHP" expanded="false" />
             <element signature="e#15854#16365#0#PHP" expanded="false" />
             <element signature="e#16371#16937#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api/controller/YZService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1968">
+          <caret line="87" column="8" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
+          <folding>
+            <element signature="e#128#157#0#PHP" expanded="true" />
+            <element signature="e#2177#2817#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
