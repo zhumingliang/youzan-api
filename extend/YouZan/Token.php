@@ -16,9 +16,6 @@ class Token
     {
         $id = session('id');
         $filename = 'token/' . $id . '.php';
-        if (is_null($id)) {
-            return ['res' => 3, 'msg' => '链接不正确，请在浏览器输入正确链接：http://youzan.partywall.cn:8080/youzan-api/public/index.php/?id=xxxxxxx'];
-        }
         // access_token 应该全局存储与更新，以下代码以写入到文件中做示例
 
         $data = json_decode(get_php_file($filename));

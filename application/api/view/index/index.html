@@ -4,13 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>有赞商品上传</title>
-<!--
-    <link rel="stylesheet" type="text/css" href="/static/api/style/bootstrap.css"/>
--->
+    <!--
+        <link rel="stylesheet" type="text/css" href="/static/api/style/bootstrap.css"/>
+    -->
     <link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.css"/>
     <script type="text/javascript">
         var SCOPE = {
-            'up_url': '{:url(\'/api/index/upFile\')}'
+            'up_url': '{:url(\'/api/index/upFile\')}',
+            'check_url': '{:url(\'/api/index/checkToken\')}'
         };
     </script>
 </head>
@@ -151,7 +152,7 @@
                                 <label class="control-label ">access_token过期，请点击链接授权：</label>
                             </div>
                             <div class="col-sm-7">
-                                <a id="url" ></a>
+                                <a id="url"></a>
                             </div>
                         </div>
                     </div>

@@ -15,6 +15,7 @@ class Index extends Controller
 {
     public function index()
     {
+
         $id = Request()->param('id');
         if (!empty($id)) {
             session('id', $id);
@@ -24,6 +25,23 @@ class Index extends Controller
 
     }
 
+
+    public function checkToken()
+    {
+        //检测token
+        $id = Request()->param('id');
+        if (empty($id)) {
+            return ['ret_code' => 2, 'msg' => '链接不正确，请在浏览器输入正确链接：http://youzan.partywall.cn:8080/youzan-api/public/index.php/?id=xxxxxxx'];
+        }
+        $token = new Token();
+        $token_res = $token->getAccessToken();
+
+        if ($token_res['res'] == 1) {
+            return ['ret_code' => 1, 'msg' => '验证成功'];
+        }
+        return ['ret_code' => 0, 'url' =>$token_res['url']];;
+
+    }
 
     public function upFile()
     {

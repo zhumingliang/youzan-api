@@ -1,7 +1,34 @@
-$("#up").click(function () {
-    /* alert("111");
-     var form = new FormData(document.getElementById("goods"));
+/**
+ * 页面加载完成，执行检测token
  */
+$(function () {
+    var id = getParam('id');
+    if (id === null) {
+        alert('链接不正确，请在浏览器输入正确链接：http://youzan.partywall.cn:8080/youzan-api/public/index.php/?id=xxxxxxx');
+    } else {
+        $.ajax({
+            url: SCOPE['check_url'],
+            type: 'POST',
+            dataType: 'json',
+            data: {id: id},
+            processData: true,
+            success: function (data, response, status) {
+               if (data['ret_code']===2){
+                   alert(data['msg']);
+
+               }else if (data['ret_code']===0){
+                   window.location.href=data['url'];
+               }
+            },
+        });
+    }
+
+});
+
+/**
+ * 上传文件
+ */
+$("#up").click(function () {
     var form = new FormData(document.getElementById("goods"));
 
     $.ajax({
@@ -54,7 +81,6 @@ $("#up").click(function () {
                 default:
 
 
-
             }
 
             $("#excel_id").val("");
@@ -64,5 +90,23 @@ $("#up").click(function () {
     });
 
 });
+
+
+/**
+ * 获取指定的URL参数值
+ * URL:http://www.quwan.com/index?name=tyler
+ * 参数：paramName URL参数
+ * 调用方法:getParam("name")
+ * 返回值:tyler
+ */
+function getParam(paramName) {
+    paramValue = "", isFound = !1;
+    if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+        arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+        while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+    }
+    return paramValue == "" && (paramValue = null), paramValue
+}
+
 
 
