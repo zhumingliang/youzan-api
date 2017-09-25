@@ -115,7 +115,7 @@ class YZService
         //将图片名称修改
         $path = pathinfo($url);
         $newname = $path['dirname'] . '/' . guid() . '.' . $path['extension'];
-        rename($path, $newname);
+        rename($url, $newname);
         return ['code' => 1, 'image_id' => $res['response']['image_id']];
 
     }

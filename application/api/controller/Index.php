@@ -150,8 +150,6 @@ class Index extends Controller
                 }
 
             }
-            //将今天的图片重命名，防止今天下一次提交替换图片
-            //$this->fRename();
 
             return ['ret_code' => 1, "success_msg" => $success_msg, "error_msg" => $error_msg];
         } catch (Exception $e) {
