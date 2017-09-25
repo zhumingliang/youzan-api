@@ -176,7 +176,7 @@ class Index extends Controller
 
     public function getURL()
     {
-        echo YouZanConfig::$LOGIN_URL . $this->guid();
+        echo YouZanConfig::$LOGIN_URL . guid();
     }
 
     private function getImageId($service, $name)
