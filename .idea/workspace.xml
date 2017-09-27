@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/view/index/index.html" afterPath="$PROJECT_DIR$/application/api/view/index/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/api/view/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="175" column="80" lean-forward="false" selection-start-line="175" selection-start-column="80" selection-end-line="175" selection-end-column="80" />
+            <state relative-caret-position="156">
+              <caret line="59" column="92" lean-forward="false" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
@@ -248,14 +249,7 @@
       <workItem from="1506001426277" duration="8119000" />
       <workItem from="1506066914976" duration="381000" />
       <workItem from="1506067371713" duration="15503000" />
-      <workItem from="1506480774593" duration="687000" />
-    </task>
-    <task id="LOCAL-00032" summary="测试">
-      <created>1505658688273</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1505658688273</updated>
+      <workItem from="1506480774593" duration="829000" />
     </task>
     <task id="LOCAL-00033" summary="测试">
       <created>1505658937520</created>
@@ -593,11 +587,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506481634338</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="测试">
+      <created>1506481665655</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1506481665656</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102474000" />
+    <option name="totallyTimeSpent" value="102616000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -930,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/view/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="175" column="80" lean-forward="false" selection-start-line="175" selection-start-column="80" selection-end-line="175" selection-end-column="80" />
+        <state relative-caret-position="156">
+          <caret line="59" column="92" lean-forward="false" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
           <folding>
             <element signature="n#div#1;n#body#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#!!top" expanded="false" />
