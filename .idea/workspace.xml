@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9d8cf6ac-5d24-455f-b2e8-7a801790494a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/api/view/index/index.html" afterPath="$PROJECT_DIR$/application/api/view/index/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -249,14 +248,7 @@
       <workItem from="1506001426277" duration="8119000" />
       <workItem from="1506066914976" duration="381000" />
       <workItem from="1506067371713" duration="15503000" />
-      <workItem from="1506480774593" duration="654000" />
-    </task>
-    <task id="LOCAL-00031" summary="测试">
-      <created>1505658507784</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1505658507784</updated>
+      <workItem from="1506480774593" duration="687000" />
     </task>
     <task id="LOCAL-00032" summary="测试">
       <created>1505658688273</created>
@@ -594,11 +586,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506329090322</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="测试">
+      <created>1506481634338</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1506481634338</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102441000" />
+    <option name="totallyTimeSpent" value="102474000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
