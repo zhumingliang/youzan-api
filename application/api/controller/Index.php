@@ -101,13 +101,13 @@ class Index extends Controller
                     $params['join_level_discount'] = $v[22];
                     $params['hide_stock'] = $v[20] ? 1 : $v[20];
                     $params['cid'] = $this->getCategoryId($v[17]);
-
-
                     $tag_id_res = $this->getTagId($service, $tags, $v[18]);
                     if (!$tag_id_res['code']) {
                         $error_msg .= $v[0] . "--失败原因：" . $tag_id_res['msg'] . ";";
                         continue;
                     }
+                    $params['tag_ids'] = $tag_id_res['ids'];
+
                     /**
                      * 组装商品sku
                      * 先判断 sku属性是否为空
