@@ -80,9 +80,10 @@ class Index extends Controller
             if (!count($result_excel)) {
                 return ['ret_code' => 0, 'msg' => 'EXCEL为空'];
             }
-            //获取所有分组
-            $tags = $service->getTagList();
+
             foreach ($result_excel as $k => $v) {
+                //获取所有分组
+                $tags = $service->getTagList();
                 if ($k > 1 && !empty(preg_replace('# #', '', $v[0]))) {
                     $params['title'] = $v[0];
                     $params['quantity'] = $v[5];
