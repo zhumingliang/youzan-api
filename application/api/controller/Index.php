@@ -437,7 +437,7 @@ class Index extends Controller
                 //新增
                 $add_res = $service->addTag($name_arr[$i]);
                 if (!$add_res['code']) {
-                    return ['code' => 0, 'msg' => '新增分组"' . $name_arr[$i] . '"失败'];
+                    return ['code' => 0, 'msg' => '新增分组"' . $name_arr[$i] . '"失败,失败原因：'.$add_res['msg']];
 
                 }
                 $tag_ids .= $add_res['tag_id'] . ',';
