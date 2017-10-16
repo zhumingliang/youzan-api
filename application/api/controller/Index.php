@@ -39,7 +39,7 @@ class Index extends Controller
         if ($token_res['res'] == 1) {
             return ['ret_code' => 1, 'msg' => '验证成功'];
         }
-        return ['ret_code' => 0, 'url' =>$token_res['url']];;
+        return ['ret_code' => 0, 'url' => $token_res['url']];;
 
     }
 
@@ -113,13 +113,16 @@ class Index extends Controller
                      * 先判断 sku属性是否为空
                      */
                     if (empty($v[1]) || empty($v[2]) || empty($v[3]) || empty($v[4])) {
-                        $error_msg .= $v[0] . "--失败原因：" . "sku属性不能为空" . ";";
-                        continue;
-                    }
+                        //$error_msg .= $v[0] . "--失败原因：" . "sku属性不能为空" . ";";
+                        //continue;
+                        $params['sku_stocks'] = '';
+                    } else {
 
-                    //$sku = '[{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"白色"},{"k":"尺寸","v":"L"}]},{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"白色"},{"k":"尺寸","v":"S"}]},{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"黑色"},{"k":"尺寸","v":"L"}]},{"item_no":3338,"code":"10","price":10000,"quantity":101,"skus":[{"k":"颜色","v":"黑色"},{"k":"尺寸","v":"S"}]}]';
-                    $sku = $this->getSkuJson($v[1], $v[2], $v[3], $v[4]);
-                    $params['sku_stocks'] = $sku;
+                        //$sku = '[{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"白色"},{"k":"尺寸","v":"L"}]},{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"白色"},{"k":"尺寸","v":"S"}]},{"item_no":3337,"code":"10","price":10000,"quantity":100,"skus":[{"k":"颜色","v":"黑色"},{"k":"尺寸","v":"L"}]},{"item_no":3338,"code":"10","price":10000,"quantity":101,"skus":[{"k":"颜色","v":"黑色"},{"k":"尺寸","v":"S"}]}]';
+                        $sku = $this->getSkuJson($v[1], $v[2], $v[3], $v[4]);
+                        $params['sku_stocks'] = $sku;
+
+                    }
 
                     /**
                      * 处理商品图片

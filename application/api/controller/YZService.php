@@ -111,7 +111,6 @@ class YZService
         if (isset($res['error_response'])) {
             return ['code' => 0, 'msg' => $res['error_response']['msg']];
         }
-
        /* //将图片名称修改
         $path = pathinfo($url);
         $newname = $path['dirname'] . '/' . guid() . '.' . $path['extension'];
